@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "requirejs": "^2.3.6"
   }
 }
