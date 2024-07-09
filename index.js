@@ -4,6 +4,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static("public"));
+app.use(express.static("images"));
+
 app.post("/save", (req, res) => {
   // Handle save request
   res.sendStatus(200);
