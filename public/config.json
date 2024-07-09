@@ -1,0 +1,51 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/zalo.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Zalo Activity",
+      "description": "A zalo activity for Journey Builder"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://your-server-url/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "save": {
+      "url": "https://your-server-url/save",
+      "verb": "POST",
+      "useJwt": false
+    },
+    "publish": {
+      "url": "https://your-server-url/publish",
+      "verb": "POST",
+      "useJwt": false
+    },
+    "validate": {
+      "url": "https://your-server-url/validate",
+      "verb": "POST",
+      "useJwt": false
+    }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "height": 200,
+      "width": 300,
+      "url": "https://your-server-url/index.html"
+    }
+  }
+}
